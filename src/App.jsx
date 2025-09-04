@@ -4,9 +4,10 @@ import Routing from "./utils/Routing";
 const App = () => {
   return (
     <div>
-      <Nav />
 
+      <Nav />
       <Routing />
+
     </div>
   );
 };

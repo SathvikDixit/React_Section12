@@ -11,8 +11,8 @@ const User = () => {
         <Link className='p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300' to="/user/Vijay">Vijay</Link>
         <Link className='p-3 bg-red-200 text-2xl mb-3 hover:bg-red-300' to="/user/Arjun">Arjun</Link>
       </div>
+      
       <hr />
-
       <Outlet />
       
     </div>
