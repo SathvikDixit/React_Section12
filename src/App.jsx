@@ -1,9 +1,24 @@
 import React from 'react'
+import { Link, Routes, Route } from 'react-router-dom'
+import Home from './Components/Home'
+import About from './Components/About'
+import User from './Components/User'
+
 
 const App = () => {
   return (
-    <div className='p-10'>
-      <button className='px-3 py-1 bg-sky-400 text-white rounded-md'>Button</button>
+    <div>
+      <nav className='p-5 flex justify-center gap-10'>
+        <Link to="/">Home</Link>
+        <Link to="/user">User</Link>
+        <Link to="/about">About</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </div>
   )
 }
